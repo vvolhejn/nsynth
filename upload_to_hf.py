@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 REPO_ID = "vvolhejn/nsynth"
 EXPORTED_JSON = Path("strudel.json")
-AUDIO_DIR = Path("nsynth-train/audio")
+AUDIO_DIR = Path("nsynth-train/audio2")  # Must be relative!
 
 
 def get_referenced_wavs(exported_json: Path) -> list[str]:
@@ -46,7 +46,7 @@ def main():
     total_size = sum((AUDIO_DIR / w).stat().st_size for w in wavs)
     print(f"\nWill upload to https://huggingface.co/datasets/{REPO_ID}:")
     print(f"  - {EXPORTED_JSON}")
-    print(f"  - {len(wavs)} audio files in nsynth-train/audio/")
+    print(f"  - {len(wavs)} audio files in {AUDIO_DIR}")
     print(f"  - Total size: {total_size / 1024 / 1024:.1f} MB")
 
     response = input("\nProceed? [y/N] ").strip().lower()
@@ -60,10 +60,10 @@ def main():
 
         shutil.copy2(EXPORTED_JSON, tmp / EXPORTED_JSON.name)
 
-        # Copy audio files into nsynth-train/audio/
-        audio_dest = tmp / "nsynth-train" / "audio"
+        audio_dest = tmp / AUDIO_DIR
         audio_dest.mkdir(parents=True)
         for wav in tqdm(wavs, desc="Staging files"):
+            (audio_dest / wav).parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(AUDIO_DIR / wav, audio_dest / wav)
 
         print(f"Uploading to https://huggingface.co/datasets/{REPO_ID}...")
