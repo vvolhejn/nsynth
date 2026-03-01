@@ -1,7 +1,5 @@
 # NSynth for Strudel
 
-WORK IN PROGRESS
-
 A part of the [NSynth](https://magenta.withgoogle.com/datasets/nsynth) dataset formatted for use with the live coding language [Strudel](https://strudel.cc/).
 
 The data itself is hosted on Hugging Face [here](https://huggingface.co/datasets/vvolhejn/nsynth), because it'd be too big for GitHub.
