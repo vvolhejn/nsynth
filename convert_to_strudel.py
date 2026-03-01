@@ -173,7 +173,7 @@ def main(
         )
         strudel_samples[instrument_name] = dict(sorted_notes)
 
-    print("samples(" + json.dumps(strudel_samples).replace('"', "'") + ")")
+    print(json.dumps(strudel_samples))
 
 
 if __name__ == "__main__":
