@@ -1,0 +1,11 @@
+
+__pycache__/
+*.pyc
+*.pyo
+
+# hugging face cache
+.cache/
+
+nsynth-train/
+nsynth-valid/
+nsynth-test/
