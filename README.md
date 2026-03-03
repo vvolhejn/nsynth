@@ -37,14 +37,16 @@ $: note("d4 a3 b3 g3 f#3")
 The instruments in _italics_ are only sampled at one velocity in the dataset, so `.n()` has no effect.
 
 bass_acoustic:
-- bass_acoustic_000
+- bass_acoustic_000 - double bass
 
 bass_electronic:
+- _bass_electronic_000_ - picked, bassy
+- _bass_electronic_001_ - picked, mids
+- bass_electronic_002 - picked, bright
+- bass_electronic_003 - picked, slightly muted
+- bass_electronic_004 - picked, muted
 
-- _bass_electronic_001_
-- bass_electronic_002
-- bass_electronic_003
-- bass_electronic_004
+bass_synthetic:
 - bass_synthetic_000
 - bass_synthetic_001
 - _bass_synthetic_002_
@@ -53,11 +55,11 @@ bass_electronic:
 
 brass_acoustic:
 
-- brass_acoustic_000
-- brass_acoustic_001
-- brass_acoustic_002
-- brass_acoustic_003
-- brass_acoustic_004
+- brass_acoustic_000 - trumpet?
+- brass_acoustic_001 - bright mid-range brass, trombone?
+- brass_acoustic_002 - tuba
+- brass_acoustic_003 - ?
+- brass_acoustic_004 - trumpet?
 
 flute_acoustic:
 
@@ -149,21 +151,21 @@ organ_electronic:
 - _organ_electronic_005_
 
 reed_acoustic:
-- reed_acoustic_000
-- reed_acoustic_001
-- reed_acoustic_002
-- reed_acoustic_003
-- reed_acoustic_004
+- reed_acoustic_000 - clarinet
+- reed_acoustic_001 - horn?
+- reed_acoustic_002 - horn?
+- reed_acoustic_003 - saxophone
+- reed_acoustic_004 - flute?
 
 reed_synthetic:
 - reed_synthetic_001
 
 string_acoustic:
-- string_acoustic_000
-- string_acoustic_001
-- string_acoustic_002
-- string_acoustic_003
-- string_acoustic_004
+- string_acoustic_000 - string orchestra, good for low notes
+- string_acoustic_001 - string orchestra tremolo
+- string_acoustic_002 - string orchestra muted
+- string_acoustic_003 - single violin
+- string_acoustic_004 - string orchestra pizzicato
 
 synth_lead_synthetic:
 - synth_lead_synthetic_000
@@ -173,11 +175,11 @@ synth_lead_synthetic:
 - synth_lead_synthetic_004
 
 vocal_acoustic:
-- vocal_acoustic_001
-- vocal_acoustic_002
-- _vocal_acoustic_003_
-- _vocal_acoustic_004_
-- vocal_acoustic_005
+- vocal_acoustic_001 - men's choir "eeh"
+- vocal_acoustic_002 - women's choir "aah"
+- _vocal_acoustic_003_ - breathy women's choir
+- _vocal_acoustic_004_ - breathy women's choir
+- vocal_acoustic_005 - women's choir "eeh"
 
 vocal_synthetic:
 - _vocal_synthetic_000_
