@@ -32,11 +32,166 @@ $: note("d4 a3 b3 g3 f#3")
   .release(0.1)
 ```
 
-### List of available instruments
+## List of available instruments
 
 The instruments in _italics_ are only sampled at one velocity in the dataset, so `.n()` has no effect.
 
+bass_acoustic:
+- bass_acoustic_000
+
+bass_electronic:
+
+- _bass_electronic_001_
+- bass_electronic_002
+- bass_electronic_003
+- bass_electronic_004
+- bass_synthetic_000
+- bass_synthetic_001
+- _bass_synthetic_002_
+- bass_synthetic_003
+- bass_synthetic_004
+
+brass_acoustic:
+
+- brass_acoustic_000
+- brass_acoustic_001
+- brass_acoustic_002
+- brass_acoustic_003
+- brass_acoustic_004
+
+flute_acoustic:
+
+- flute_acoustic_000
+- _flute_acoustic_001_
+- flute_acoustic_003
+- flute_acoustic_004
+- _flute_acoustic_005_
+
+flute_synthetic:
+
+- flute_synthetic_001
+- flute_synthetic_002
+- _flute_synthetic_004_
+- _flute_synthetic_005_
+- flute_synthetic_006
+
+guitar_acoustic:
+
+- guitar_acoustic_000
+- guitar_acoustic_001
+- guitar_acoustic_002
+- _guitar_acoustic_003_
+- guitar_acoustic_004
+
+guitar_electronic:
+
+- guitar_electronic_000
+- guitar_electronic_001
+- _guitar_electronic_002_
+- guitar_electronic_003
+- guitar_electronic_004
+
+guitar_synthetic:
+
+- guitar_synthetic_000
+- guitar_synthetic_001
+- guitar_synthetic_002
+- guitar_synthetic_003
+- guitar_synthetic_004
+
+keyboard_acoustic:
+- keyboard_acoustic_000
+- keyboard_acoustic_001
+- keyboard_acoustic_002
+- keyboard_acoustic_003
+- keyboard_acoustic_005
+
+keyboard_electronic:
+- keyboard_electronic_000
+- _keyboard_electronic_004_
+- keyboard_electronic_005
+- keyboard_electronic_006
+- keyboard_electronic_007
+
+keyboard_synthetic:
+- _keyboard_synthetic_001_
+- _keyboard_synthetic_002_
+- keyboard_synthetic_003
+- _keyboard_synthetic_004_
+- _keyboard_synthetic_005_
+
+mallet_acoustic:
+- mallet_acoustic_000
+- mallet_acoustic_001
+- mallet_acoustic_002
+- mallet_acoustic_003
+- mallet_acoustic_004
+
+mallet_electronic:
+- mallet_electronic_000
+- mallet_electronic_001
+- mallet_electronic_002
+- mallet_electronic_003
+- mallet_electronic_004
+
+mallet_synthetic:
+- mallet_synthetic_000
+- mallet_synthetic_001
+- mallet_synthetic_002
+- mallet_synthetic_003
+- mallet_synthetic_004
+
+organ_electronic:
+- _organ_electronic_000_
+- organ_electronic_002
+- organ_electronic_003
+- _organ_electronic_004_
+- _organ_electronic_005_
+
+reed_acoustic:
+- reed_acoustic_000
+- reed_acoustic_001
+- reed_acoustic_002
+- reed_acoustic_003
+- reed_acoustic_004
+
+reed_synthetic:
+- reed_synthetic_001
+
+string_acoustic:
+- string_acoustic_000
+- string_acoustic_001
+- string_acoustic_002
+- string_acoustic_003
+- string_acoustic_004
+
+synth_lead_synthetic:
+- synth_lead_synthetic_000
+- synth_lead_synthetic_001
+- synth_lead_synthetic_002
+- synth_lead_synthetic_003
+- synth_lead_synthetic_004
+
+vocal_acoustic:
+- vocal_acoustic_001
+- vocal_acoustic_002
+- _vocal_acoustic_003_
+- _vocal_acoustic_004_
+- vocal_acoustic_005
+
+vocal_synthetic:
+- _vocal_synthetic_000_
+- vocal_synthetic_001
+- vocal_synthetic_002
+- vocal_synthetic_004
+- vocal_synthetic_005
+
+<details>
+<summary>List of all instruments on one line</summary>
+
 bass_acoustic_000, _bass_electronic_000_, _bass_electronic_001_, bass_electronic_002, bass_electronic_003, bass_electronic_004, bass_synthetic_000, bass_synthetic_001, _bass_synthetic_002_, bass_synthetic_003, bass_synthetic_004, brass_acoustic_000, brass_acoustic_001, brass_acoustic_002, brass_acoustic_003, brass_acoustic_004, flute_acoustic_000, _flute_acoustic_001_, flute_acoustic_003, flute_acoustic_004, _flute_acoustic_005_, flute_synthetic_001, flute_synthetic_002, _flute_synthetic_004_, _flute_synthetic_005_, flute_synthetic_006, guitar_acoustic_000, guitar_acoustic_001, guitar_acoustic_002, _guitar_acoustic_003_, guitar_acoustic_004, guitar_electronic_000, guitar_electronic_001, _guitar_electronic_002_, guitar_electronic_003, guitar_electronic_004, guitar_synthetic_000, guitar_synthetic_001, guitar_synthetic_002, guitar_synthetic_003, guitar_synthetic_004, keyboard_acoustic_000, keyboard_acoustic_001, keyboard_acoustic_002, keyboard_acoustic_003, keyboard_acoustic_005, keyboard_electronic_000, _keyboard_electronic_004_, keyboard_electronic_005, keyboard_electronic_006, keyboard_electronic_007, _keyboard_synthetic_001_, _keyboard_synthetic_002_, keyboard_synthetic_003, _keyboard_synthetic_004_, _keyboard_synthetic_005_, mallet_acoustic_000, mallet_acoustic_001, mallet_acoustic_002, mallet_acoustic_003, mallet_acoustic_004, mallet_electronic_000, mallet_electronic_001, mallet_electronic_002, mallet_electronic_003, mallet_electronic_004, mallet_synthetic_000, mallet_synthetic_001, mallet_synthetic_002, mallet_synthetic_003, mallet_synthetic_004, _organ_electronic_000_, organ_electronic_002, organ_electronic_003, _organ_electronic_004_, _organ_electronic_005_, reed_acoustic_000, reed_acoustic_001, reed_acoustic_002, reed_acoustic_003, reed_acoustic_004, reed_synthetic_001, string_acoustic_000, string_acoustic_001, string_acoustic_002, string_acoustic_003, string_acoustic_004, synth_lead_synthetic_000, synth_lead_synthetic_001, synth_lead_synthetic_002, synth_lead_synthetic_003, synth_lead_synthetic_004, vocal_acoustic_001, vocal_acoustic_002, _vocal_acoustic_003_, _vocal_acoustic_004_, vocal_acoustic_005, _vocal_synthetic_000_, vocal_synthetic_001, vocal_synthetic_002, vocal_synthetic_004, vocal_synthetic_005
+
+</details>
 
 
 ## Development
