@@ -16,20 +16,35 @@ $: n("0 1 2 3 4@4")
   .release(0.1) // otherwise, each sample plays for 3s
 ```
 
-NSynth instruments are recorded at multiple MIDI velocities. On piano/keys, this corresponds to how hard the key was pressed, and gives us more expressive instruments.
+NSynth instruments are recorded at multiple MIDI velocities. On piano/keys, this corresponds to how hard the key was pressed, and gives us more expressive instruments. Notice how in the sample above, it's not just a volume change, but rather a different timbre.
 
 Strudel also has `.velocity()` but it's normally just a gain multiplier, so above we have to use `.n()` to choose between the samples.
-You can use the following workaround to get a MIDI-like velocity working natively:
+We can register `.nsynth()` function to make things easier:
+- it loads the sound
+- sets `.release()` so that the sound doesn't ring out for the whole 4 seconds
+- repurposes `.velocity` (if used) to select the MIDI velocity for the sample (see above) as well as compressing the `velocity` value itself so that the changes in gain aren't as strong
 
 ```js
 setCpm(160/4)
 samples('github:vvolhejn/nsynth')
 
+// Load an nsynth instrument with the proper sample based on velocity.
+// Must be called after .velocity() to work properly
+register('nsynth', (val, pat) => {
+  return pat
+    .sound(val)
+    .release(0.1)
+    .withValue(x=>Object.assign(x,
+      {
+        n: Math.floor((x.velocity || 0.7) * 4),
+        velocity: 0.5 + (x.velocity || 0.7) * 0.5
+      }
+    ))
+})
+
 $: note("d4 a3 b3 g3 f#3")
-  .sound("guitar_electronic_004")
-  .velocity(saw.slow(4)) // Velocity should be in [0,1]
-  .withValue(x=>Object.assign(x, {n: Math.floor(x.velocity * 4), velocity: 0.5 + x.velocity * 0.5}))
-  .release(0.1)
+  .velocity(saw.slow(4)) // call *before* .nsynth()
+  .nsynth("string_acoustic_004")
 ```
 
 ## List of available instruments
